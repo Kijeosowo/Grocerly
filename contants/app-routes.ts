@@ -13,8 +13,20 @@ export enum APP_ROUTES {
   CART = 'cart',
   ACCOUNT = 'account',
 
-  NOTIFICATION="/authorised/notification",
-  SEARCH="/authorised/search",
+  PRIVACY = 'Account/privacypolicy',
+  TERMSANDCONDITION = 'Account/termsandcondition',
+  PERSONALDETAILS = 'Account/personaldetails',
+  EDITPROFILE = 'Account/Editprofile',
+  ADDRESSDETAILS = 'Account/Address',
+  EDITADDRESS = 'Account/editaddress',
+  ADDADDRESS = 'Account/addaddress',
+  PASSWORDSETTINGS = 'Account/passwordsettings',
+  CHANGEPASSWORD = 'Account/changepassword',
+  CHANGEEMAIL = 'Account/changeemail',
+  CONTACT = 'Account/contact',
 
-  PRODUCT_DETAILS="/productDetails/[productId]"
+  NOTIFICATION = '/authorised/notification',
+  SEARCH = '/authorised/search',
+
+  PRODUCT_DETAILS = '/productDetails/[productId]',
 }

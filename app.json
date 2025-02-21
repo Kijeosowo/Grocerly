@@ -19,12 +19,14 @@
       [
         "expo-font",
         {
-          "fonts": ["./assets/fonts/Inter_18pt-ThinItalic.ttf"]
+          "fonts": [
+            "./assets/fonts/Inter_18pt-ThinItalic.ttf"
+          ]
         }
       ]
     ],
     "splash": {
-      "image": "./assets/images/adaptive-icon.png",
+      "image": "./assets/images/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#F15A22"
     },
@@ -34,7 +36,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/logo.png",
         "backgroundColor": "#F15A22"
       },
       "package": "com.anonymous.myapp",
@@ -42,13 +44,17 @@
         "android.permission.ACCESS_COARSE_LOCATION",
         "android.permission.ACCESS_FINE_LOCATION"
       ],
-
       "foregroundImage": "./assets/images/logo.png",
-      "backgroundColor": "red"
+      "backgroundColor": "white"
     },
     "package": "com.anonymous.myapp",
     "foregroundImage": "./assets/images/logo.png",
-    "backgroundColor": "#ffffff"
+    "backgroundColor": "#ffffff",
+    "extra": {
+      "eas": {
+        "projectId": "6b5add63-0a4d-48d3-b28b-232c7484c6e4"
+      }
+    }
   },
   "web": {
     "favicon": "./assets/favicon.png"

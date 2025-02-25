@@ -1,5 +1,5 @@
 export enum APP_ROUTES {
-  HOME = '/(main)',
+  HOME = 'index',
   LOGIN = '/(auth)',
   CREATE_ACCOUNT = '/(auth)/signup',
   SET_PASSWORD = '/(auth)/password',
@@ -28,5 +28,5 @@ export enum APP_ROUTES {
   NOTIFICATION = '/authorised/notification',
   SEARCH = '/authorised/search',
 
-  PRODUCT_DETAILS = '/productDetails/[productId]',
+  PRODUCT_DETAILS="/productDetails/[productId]"
 }

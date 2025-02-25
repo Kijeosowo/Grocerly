@@ -11,7 +11,6 @@ import {
   KeyboardAvoidingView,
   TouchableWithoutFeedback,
   Platform,
-  Keyboard
 } from 'react-native';
 import {MMKV} from 'react-native-mmkv';
 import axios from 'axios';
@@ -26,7 +25,7 @@ const getAIResponse = async (query: string, language: string) => {
     `https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1`,
     {inputs: prompt(query, language)},
     {
-      headers: {Authorization: `Bearer ${HF_API_KEY}`},
+      // headers: {Authorization: `Bearer ${HF_API_KEY}`},
       timeout: 30000, // 30s timeout
     },
   );

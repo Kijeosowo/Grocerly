@@ -7,8 +7,9 @@
     "icon": "./assets/images/logo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
-    "scheme": "your-app-grouc",
+    "scheme": "Grocerly",
     "plugins": [
+
       "expo-localization",
       [
         "expo-location",
@@ -19,9 +20,7 @@
       [
         "expo-font",
         {
-          "fonts": [
-            "./assets/fonts/Inter_18pt-ThinItalic.ttf"
-          ]
+          "fonts": ["./assets/fonts/Inter_18pt-ThinItalic.ttf"]
         }
       ]
     ],
@@ -36,7 +35,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/logo.png",
+        "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#F15A22"
       },
       "package": "com.anonymous.myapp",
@@ -44,17 +43,13 @@
         "android.permission.ACCESS_COARSE_LOCATION",
         "android.permission.ACCESS_FINE_LOCATION"
       ],
+
       "foregroundImage": "./assets/images/logo.png",
-      "backgroundColor": "white"
+      "backgroundColor": "red"
     },
     "package": "com.anonymous.myapp",
     "foregroundImage": "./assets/images/logo.png",
-    "backgroundColor": "#ffffff",
-    "extra": {
-      "eas": {
-        "projectId": "6b5add63-0a4d-48d3-b28b-232c7484c6e4"
-      }
-    }
+    "backgroundColor": "#ffffff"
   },
   "web": {
     "favicon": "./assets/favicon.png"

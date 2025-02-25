@@ -5,7 +5,6 @@
       "descriptions": "From juicy fruits and crisp vegetables to premium meats and pantry staples, we've got everything you need.",
       "skip": "Skip"
     },
-
     "two": {
       "header": "Your Grocery Delivery Superhero",
       "descriptions": "Tired of lugging heavy bags home from the grocery store? Let us do the heavy lifting!"
@@ -110,11 +109,12 @@
     "reload": "Reload"
   },
 
-  "filter": {
+  "filter":{
     "header": "Filter"
   },
-  "notification": {
+  "notification":{
     "header": "Notifications",
+    "No_Notifications": "You have No Notifications yet",
     "headerTitle": "You've got a new notification waiting for you, never miss important updates."
   },
   "search": {
@@ -127,6 +127,8 @@
     "btn1": "Home",
     "btn2": "Cart"
   },
+  
+
 
   "Tab": {
     "Home": "Home",
@@ -135,6 +137,7 @@
     "Cart": "Cart",
     "Account": "Account"
   },
+
 
   "order": {
     "header": "My Order",
@@ -156,96 +159,5 @@
       "amount": "Amount",
       "date": "Placed on"
     }
-  },
-
-  "account": {
-    "header": "Account",
-    "logout": "Logout"
-  },
-  "privacypolicy": {
-    "header": "PRIVACY POLICY",
-    "subheader": "PRIVACY POLICY FOR GROCERLY",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquhdihijkd;l/dv"
-  },
-  "termsandcondition": {
-    "header": "Terms of Usage",
-    "subheader": "TERMS OF USAGE FOR GROCERLY",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquhdihijkd;l/dv"
-  },
-  "personaldetails": {
-    "header": "Personal Details",
-    "editprofile": "Edit Profile Settings",
-    "firstname": "First Name",
-    "lastname": "Last Name",
-    "email": "Email Address",
-    "number": "Phone Number",
-    "birth": "Date of Birth",
-    "firstnamevalue": "Jane",
-    "lastnamevalue": "Doe",
-    "emailvalue": "janedoe@gmail.com",
-    "numbervalue": "+60 345 6789 000",
-    "birthvalue": "22/07/1994"
-  },
-  "editprofile": {
-    "header": "Edit Profile"
-  },
-  "address": {
-    "header": "Address",
-    "editaddress": "Edit Address Details",
-    "newaddress": "Add New Adress",
-    "address": "Address Line 1",
-    "addressvalue": "23 old park road, ipoh",
-    "city": "City",
-    "cityvalue": "Ipoh",
-    "state_province": "State / Province",
-    "state_provincevalue": "Ipoh",
-    "postal": "Postal Code",
-    "postalcode": "1234567890"
-  },
-  "editaddress": {
-    "header": "Edit Address",
-    "text": "Please ensure your delivery address is correct",
-    "submit": "Submit"
-  },
-  "addaddress": {
-    "header": "Add Adress",
-    "map": "Choose on Map"
-  },
-  "passwordsettings": {
-    "header": "Password Settings",
-    "password": "Password",
-    "passwordtext": "Set up a unique password to protect your account",
-    "email": "Email",
-    "emailtext": "Email address associated with your account",
-    "deactivate": "Deactivate Account",
-    "closeaccount": "Deactivate"
-  },
-  "changepassword": {
-    "header": "Change Password",
-    "old": "Old Password",
-    "new": "New Password",
-    "strong": "Strong",
-    "number": "10/60",
-    "confirm": "Confirm"
-  },
-  "changeemail": {
-    "header": "Change Email",
-    "old": "Old Email",
-    "new": "New Email",
-    "strong": "Please ensure you have access to this email provided",
-    "number": "10/60",
-    "confirm": "Confirm"
-  },
-  "contact": {
-    "header": "Contact Us",
-    "address": "House# 72, Road# 21, Banani, Dhaka-1213 (near Banani Bidyaniketon School & College, beside University of South Asia",
-    "call": "Call: 13301 (24/7",
-    "email": "support@pathao.com",
-    "sendmessage": "Send Message",
-    "name": "Name",
-    "emailtext": "Email",
-    "number": "Your mobile number",
-    "message": "Write your text",
-    "submit": "Submit"
   }
 }

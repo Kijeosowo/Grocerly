@@ -32,7 +32,8 @@
         <data android:scheme="com.anonymous.myapp"/>
         <data android:scheme="exp+my-app"/>
         <data android:scheme="your-app-scheme"/>
+        <!-- <data android:scheme="exp+grocerly"/> -->
       </intent-filter>
     </activity>
   </application>
-</manifest>
+</manifest> 

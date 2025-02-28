@@ -13,18 +13,18 @@ import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 import {useReactQueryDevTools} from '@dev-plugins/react-query';
 import FlashMessage from 'react-native-flash-message';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
-import {
-  useFonts,
-  Montserrat_100Thin,
-  Montserrat_200ExtraLight,
-  Montserrat_300Light,
-  Montserrat_400Regular,
-  Montserrat_500Medium,
-  Montserrat_600SemiBold,
-  Montserrat_700Bold,
-  Montserrat_800ExtraBold,
-  Montserrat_900Black,
-} from "@expo-google-fonts/montserrat";
+// import {
+//   useFonts,
+//   Montserrat_100Thin,
+//   Montserrat_200ExtraLight,
+//   Montserrat_300Light,
+//   Montserrat_400Regular,
+//   Montserrat_500Medium,
+//   Montserrat_600SemiBold,
+//   Montserrat_700Bold,
+//   Montserrat_800ExtraBold,
+//   Montserrat_900Black,
+// } from "@expo-google-fonts/montserrat";
 
 
 LogBox.ignoreAllLogs(true);
@@ -32,27 +32,27 @@ const queryClient = new QueryClient();
 SplashScreen.preventAutoHideAsync();
 
 const Layout = () => {
-  let [fontsLoaded] = useFonts({
-    Montserrat_100Thin,
-    Montserrat_200ExtraLight,
-    Montserrat_300Light,
-    Montserrat_400Regular,
-    Montserrat_500Medium,
-    Montserrat_600SemiBold,
-    Montserrat_700Bold,
-    Montserrat_800ExtraBold,
-    Montserrat_900Black,
-  });
+  // let [fontsLoaded] = useFonts({
+  //   Montserrat_100Thin,
+  //   Montserrat_200ExtraLight,
+  //   Montserrat_300Light,
+  //   Montserrat_400Regular,
+  //   Montserrat_500Medium,
+  //   Montserrat_600SemiBold,
+  //   Montserrat_700Bold,
+  //   Montserrat_800ExtraBold,
+  //   Montserrat_900Black,
+  // });
 
   useInitialAndroidBarSync();
   const {colorScheme} = useColorScheme();
   useReactQueryDevTools(queryClient);
 
-  useEffect(() => {
-    if (!fontsLoaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [fontsLoaded]);
+  // useEffect(() => {
+  //   if (!fontsLoaded) {
+  //     SplashScreen.hideAsync();
+  //   }
+  // }, [fontsLoaded]);
 
   return (
     <>

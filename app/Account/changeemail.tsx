@@ -4,7 +4,6 @@ import {
   Text,
   ScrollView,
   TextInput,
-  Image,
   StyleSheet,
   TouchableOpacity,
   KeyboardAvoidingView,
@@ -12,21 +11,20 @@ import {
   Keyboard,
   TouchableWithoutFeedback,
 } from 'react-native';
+import { router } from 'expo-router';
 import ScreenWrapper from '@/components/ScreenWrapper';
 import {COLORS} from '@/theme/colors';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 import ArchBorder from '@/components/ArchBorder';
 import MainPageHeader from '@/components/MainPageHeader';
 import {t} from 'i18next';
-import CustomButton from '@/components/CustomButton';
-import {APP_ROUTES} from '@/contants/app-routes';
 import Layout from '../(main)/_layout';
-import {router, useRouter} from 'expo-router';
+import { APP_ROUTES } from '@/contants/app-routes';
+import { SAFE_AREA_PADDING } from '@/utils/utils';
 
-const AddAddress = () => {
-  const chooseMap = () => {
-    router.push(APP_ROUTES.ADD_ADDRESS);
-  };
+const changeemail = () => {
+  const passwordreset = (() => {
+    router.push(APP_ROUTES.RESETEMAIL);
+  })
   return (
     <ScreenWrapper background={COLORS.light.primary}>
       <KeyboardAvoidingView
@@ -35,50 +33,36 @@ const AddAddress = () => {
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
           <ScrollView className="flex-1 bg-white">
             <ArchBorder>
-              <MainPageHeader name={t('account.Address.add_Address.title')} />
+              <MainPageHeader
+                name={t('account.password_settings.change_email.header')}
+              />
             </ArchBorder>
 
             <View style={styles.container}>
               <TextInput
                 style={styles.input}
-                placeholder={t('account.Address.add_Address.1')}
-                placeholderTextColor="#000"
-              />
-              <Text className="text-[12px] text-gray-600">
-                {t('account.Address.add_Address.2')}
-              </Text>
-
-              <TextInput
-                style={styles.input}
-                placeholder={t('account.Address.add_Address.3')}
+                placeholder={t('account.password_settings.change_email.1')}
                 placeholderTextColor="#000"
               />
 
               <TextInput
                 style={styles.input}
-                placeholder={t('account.Address.add_Address.4')}
-                keyboardType="phone-pad"
+                placeholder={t('account.password_settings.change_email.2')}
                 placeholderTextColor="#000"
               />
-
-              <TextInput
-                style={styles.input}
-                placeholder={t('account.Address.add_Address.5')}
-                placeholderTextColor="#000"
-              />
-
-              <View className="flex items-center">
-                <Image
-                  source={require('@/assets/address.png')}
-                  className="w-32 h-32"
-                />
+              <View className="flex-row justify-between">
+                <Text
+                  className="text-sm text-base"
+                  style={{color: COLORS.light.grey3}}>
+                  {t('account.password_settings.change_email.access')}
+                </Text>
               </View>
 
-              <CustomButton
-                navigateProps={chooseMap}
-                textProps={t('account.Address.add_Address.map')}>
-                <Ionicons name="location-outline" size={24} color="#ffffff" />
-              </CustomButton>
+              <TouchableOpacity style={styles.button}>
+                <Text style={styles.buttonText} className="text-sm" onPress={passwordreset}>
+                  {t('account.password_settings.change_email.confirm')}
+                </Text>
+              </TouchableOpacity>
             </View>
           </ScrollView>
         </TouchableWithoutFeedback>
@@ -88,7 +72,7 @@ const AddAddress = () => {
   );
 };
 
-export default AddAddress;
+export default changeemail;
 
 const styles = StyleSheet.create({
   container: {
@@ -103,12 +87,9 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   button: {
-    display: 'flex',
-    flexDirection: 'row',
     backgroundColor: '#F15A22',
     padding: 15,
     borderRadius: 50,
-    justifyContent: 'center',
     alignItems: 'center',
     marginTop: 50,
   },

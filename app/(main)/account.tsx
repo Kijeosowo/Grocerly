@@ -1,115 +1,96 @@
-import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native'
-import React, { useRef } from 'react'
-import ScreenWrapper from '@/components/ScreenWrapper'
-import { COLORS } from '@/theme/colors'
-import ArchBorder from '@/components/ArchBorder'
-import MainPageHeader from '@/components/MainPageHeader'
-import { useTranslation } from 'react-i18next'
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import React from 'react';
+import ScreenWrapper from '@/components/ScreenWrapper';
+import {COLORS} from '@/theme/colors';
+import ArchBorder from '@/components/ArchBorder';
+import MainPageHeader from '@/components/MainPageHeader';
+import {Link} from 'expo-router';
+import {t} from 'i18next';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import Octicons from '@expo/vector-icons/Octicons';
-import Terms from "@/components/icons/terms"
-import { SAFE_AREA_PADDING } from '@/utils/utils'
-import GreaterThan from "@/components/icons/greaterThan"
-import { APP_ROUTES } from '@/contants/app-routes'
-import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import { useRouter } from 'expo-router'
+import {APP_ROUTES} from '@/contants/app-routes';
 
+const accountOptions = [
+  {
+    title: t('account.list_section.1'),
+    route: APP_ROUTES.PERSONAL_DETAILS,
+    icon: 'person-outline',
+  },
+  {
+    title: t('account.list_section.2'),
+    route: APP_ROUTES.ADDRESS,
+    icon: 'location-outline',
+  },
+  {
+    title: t('account.list_section.3'),
+    route: APP_ROUTES.PASSWORD_SETTING,
+    icon: 'settings-outline',
+  },
+  {
+    title: t('account.list_section.4'),
+    route: APP_ROUTES.TERMS,
+    icon: 'document-text-outline',
+  },
+  {
+    title: t('account.list_section.5'),
+    route: APP_ROUTES.SUPPORT,
+    icon: 'help-circle-outline',
+  },
+  {
+    title: t('account.list_section.6'),
+    route: APP_ROUTES.PRIVACY,
+    icon: 'shield-checkmark-outline',
+  },
+];
 
 const Account = () => {
-  const {t} = useTranslation();
-  const listRef = useRef(null);
-  const router = useRouter()
-
-  const listSection = [
-    {
-      id: 1,
-      name: t("account.list_section.1"),
-      icon: <Ionicons name="person-outline" size={20} color="#00000066" />,
-      routes: APP_ROUTES.PERSONAL_DETAILS
-    },
-    {
-      id: 2,
-      name: t("account.list_section.2"),
-      icon: <Ionicons name="location-outline" size={20} color="#00000066" />,
-      routes: APP_ROUTES.ADDRESS
-    },
-    {
-      id: 3,
-      name: t("account.list_section.3"),
-      icon: <Ionicons name="settings-outline" size={20} color="#00000066" />,
-      routes: APP_ROUTES.PASSWORD_SETTING
-    },
-    {
-      id: 4,
-      name: t("account.list_section.4"),
-      icon: <Terms />,
-      routes: APP_ROUTES.TERMS
-    },
-    {
-      id: 5,
-      name: t("account.list_section.5"),
-      icon: <Octicons name="question" size={20} color="#00000066" />,
-      routes: APP_ROUTES.SUPPORT
-    },
-    {
-      id: 6,
-      name: t("account.list_section.6"),
-      icon: <Octicons name="shield" size={20} color="#00000066" />,
-      routes: APP_ROUTES.PRIVACY
-    }
-  ]
-
   return (
     <ScreenWrapper background={COLORS.light.primary}>
       <View className="flex-1 bg-white">
         <ArchBorder>
-          <MainPageHeader name={t("account.title")} />
+          <MainPageHeader name={t('account.title')} />
         </ArchBorder>
 
-        <View style={styles.headerDesc}>
-          <FlatList
-            ref={listRef}
-            data={listSection}
-            showsVerticalScrollIndicator={false}
-            contentContainerStyle={{rowGap: 20}}
-            style={{marginBottom: 20}}
-            keyExtractor={(item) => item.id.toString()}
-            renderItem={(item: any)=> (
-              <View className='flex-row items-center justify-between w-full border-b-2 pb-2 border-gray-50'>
-                <View className='flex-row items-center gap-3'>
-                  <View className='rounded-full items-center justify-center w-[35] h-[35] bg-gray-200'>
-                    {item?.item?.icon}
-                  </View>
-                  <Text className='font-medium text-base capitalize'>{item?.item?.name}</Text>
-                </View>
-
-                <TouchableOpacity className='' onPress={() => router.push(item?.item?.routes) }>
-                  <GreaterThan />
-                </TouchableOpacity>
+        <View className="p-5">
+          {accountOptions.map((option, index) => (
+            <TouchableOpacity
+              key={index}
+              className="flex-row items-center justify-between py-4">
+              <View className="flex-row items-center">
+                <Ionicons
+                  name={option.icon}
+                  size={24}
+                  color={COLORS.dark.grey3}
+                  className="mr-4"
+                />
+                <Link href={option.route} className="text-sm text-[#191A23]">
+                  {option.title}
+                </Link>
               </View>
-            )}
-          />
-
-          <View className='flex-row items-center gap-3'>
-            <View className='rounded-full items-center justify-center w-[40] h-[40]' style={{backgroundColor: "#E00000"}}>
-              <MaterialIcons name="logout" size={20} color="#ffffff" />
-            </View>
-            <Text className='font-medium text-base capitalize' style={{color: "#E00000"}}>{t("account.list_section.7")}</Text>
-          </View>
+              <Ionicons
+                name="chevron-forward-outline"
+                size={20}
+                color={COLORS.dark.grey3}
+              />
+            </TouchableOpacity>
+          ))}
         </View>
 
+        <View>
+          <TouchableOpacity className="flex-row p-5 items-center">
+            <Ionicons
+              name="log-out-outline"
+              size={24}
+              color="white"
+              className="mr-2 bg-[#F15A22] p-3 rounded-full"
+            />
+            <Link href="" className="mt-3 font-semibold text-[#F15A22]">
+              {t('account.list_section.7')}
+            </Link>
+          </TouchableOpacity>
+        </View>
       </View>
     </ScreenWrapper>
-  )
-}
+  );
+};
 
-export default Account
-
-const styles = StyleSheet.create({
-  headerDesc: {
-    position: "absolute",
-    top: 150,
-    zIndex: 10,
-    paddingHorizontal: SAFE_AREA_PADDING.paddingRight,
-  }
-});
+export default Account;

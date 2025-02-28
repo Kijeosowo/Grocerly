@@ -108,14 +108,26 @@
     "success": "Successful",
     "reload": "Reload"
   },
-  "notification":{
+
+  "filter": {
+    "header": "Filter"
+  },
+  "notification": {
     "header": "Notifications",
     "No_Notifications": "You have No Notifications yet",
     "headerTitle": "You've got a new notification waiting for you, never miss important updates."
   },
   "search": {
-    "placeholder" : "Search for Products"
+    "placeholder": "Search for Products"
   },
+  "cart": {
+    "title": "Add to cart",
+    "desc": "This Item has been added successfully",
+    "sub-title": "Item added to cart!",
+    "btn1": "Home",
+    "btn2": "Cart"
+  },
+
   "Tab": {
     "Home": "Home",
     "Order": "Order",
@@ -123,6 +135,7 @@
     "Cart": "Cart",
     "Account": "Account"
   },
+
   "order": {
     "header": "My Order",
     "pageHeader": "Delivery History",
@@ -145,18 +158,15 @@
     }
   },
   "product": {
-    "title": "Products",
-    "view": "View more",
-    "no_product": "No product",
     "product-details": {
       "title": "Product Details",
       "category": "category",
       "Availability": "Availability",
-      "Delivery" : "Delivery Time Frame",
-      "time" : "working days",
+      "Delivery": "Delivery Time Frame",
+      "time": "working days",
       "Provinces": "Deliver to 5 Provinces",
-      "Save" : "Save money!",
-      "save-desc" : "Top up now and enjoy the best price in the market",
+      "Save": "Save money!",
+      "save-desc": "Top up now and enjoy the best price in the market",
       "save-title-desc": "Compare to market price",
       "tag-Description": "Description",
       "tag-Nutritional": "Nutritional Information",
@@ -180,7 +190,14 @@
     },
     "Categories": {
       "title": "Categories",
-      "notAvailable": "No category to display "
+      "Bakery": "Bakery & Grains",
+      "Health": "Health Foods",
+      "Beverages": "Beverages",
+      "Spices": "Spices & Condimemts",
+      "Meat": "Meat & Poultry",
+      "Dairy": "Dairy Products",
+      "Dry-Foods": "Dry Foods & Grains",
+      "Frozen-Foods": "Frozen Foods"
     },
     "filter": {
       "title": "Filter",
@@ -230,7 +247,7 @@
     "Home": "Home",
     "cart2": "Cart",
     "checkout": "Complete checkout",
-    "Payment" : "Complete Payment",
+    "Payment": "Complete Payment",
     "Proceed-payment": "Proceed to payment",
     "Shopping": "Start Shopping",
     "Filter": "Apply Filter",
@@ -294,7 +311,7 @@
     "title": "Account",
     "list_section": {
       "1": "Personal Details",
-      "2":  "Address Details",
+      "2": "Address Details",
       "3": "Password and Email Settings",
       "4": "Terms and Conditions",
       "5": "Support",
@@ -331,8 +348,48 @@
       "Select City": "Select City",
       "warn": "Please Ensure your delivery address is correct",
       "add_Address": {
-        "title": "Add Address"
+        "title": "Add Address",
+        "1": "Address Line 1",
+        "2": "Please ensure your delivery address is correct",
+        "3": "Select City",
+        "4": "State/Province/Region",
+        "5": "Zip/Postal Code",
+        "map": "Choose on map"
+      },
+      "submit": "Submit"
+    },
+    "password_settings": {
+      "password": {
+        "header": "Password Settings",
+        "title": "Password",
+        "sub-title": "Set up a unique password to protect your account"
+      },
+      "email_address": {
+        "title": "Email Address",
+        "sub-title": "Email address associated with your account"
+      },
+      "deactivate": {
+        "title": "Deactivate",
+        "sub-title": "Email address associated with your account",
+        "deactivate": "Deactivate"
+      },
+      "change_password": {
+        "header": "Change Password",
+        "1": "Old Password",
+        "2": "New Password",
+        "strong": "Strong",
+        "confirm": "Confirm"
+      },
+      "change_email": {
+        "header": "Change Email",
+        "1": "Old Email",
+        "2": "New Email",
+        "access": "Please ensure you have access to this email provided",
+        "confirm": "Confirm"
       }
+    },
+    "edit_profile": {
+      "header": "Edit Profille"
     }
   }
 }

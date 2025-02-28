@@ -11,7 +11,6 @@ import {
   KeyboardAvoidingView,
   TouchableWithoutFeedback,
   Platform,
-  Keyboard,
 } from 'react-native';
 import {MMKV} from 'react-native-mmkv';
 import axios from 'axios';

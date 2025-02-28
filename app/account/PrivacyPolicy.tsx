@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
           <MainPageHeader name={t("account.Privacy.title")} />
         </ArchBorder>
 
-        <View style={styles.headerDesc}>
+        <View style={styles.headerDesc} style={{padding: SAFE_AREA_PADDING.paddingRight}}>
           <Text className='text-center font-bold uppercase text-lg mb-3'>{t("account.Privacy.sub_title")}</Text>
         </View>
 

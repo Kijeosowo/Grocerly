@@ -4,7 +4,7 @@ import {
   Text,
   ScrollView,
   TextInput,
-  Image,
+  Alert,
   StyleSheet,
   TouchableOpacity,
   KeyboardAvoidingView,
@@ -12,21 +12,27 @@ import {
   Keyboard,
   TouchableWithoutFeedback,
 } from 'react-native';
+
 import ScreenWrapper from '@/components/ScreenWrapper';
 import {COLORS} from '@/theme/colors';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 import ArchBorder from '@/components/ArchBorder';
 import MainPageHeader from '@/components/MainPageHeader';
 import {t} from 'i18next';
-import CustomButton from '@/components/CustomButton';
-import {APP_ROUTES} from '@/contants/app-routes';
+import SelectImage from './SelectImage';
 import Layout from '../(main)/_layout';
-import {router, useRouter} from 'expo-router';
 
-const AddAddress = () => {
-  const chooseMap = () => {
-    router.push(APP_ROUTES.ADD_ADDRESS);
+const Editprofile = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    phoneNumber: '',
+    dateOfBirth: '',
+  });
+
+  const handleChange = (name, value) => {
+    setFormData({...formData, [name]: value});
   };
+
   return (
     <ScreenWrapper background={COLORS.light.primary}>
       <KeyboardAvoidingView
@@ -35,50 +41,48 @@ const AddAddress = () => {
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
           <ScrollView className="flex-1 bg-white">
             <ArchBorder>
-              <MainPageHeader name={t('account.Address.add_Address.title')} />
+              <MainPageHeader name={t('account.edit_profile.header')} />
             </ArchBorder>
+            
+            <SelectImage />
 
             <View style={styles.container}>
               <TextInput
                 style={styles.input}
-                placeholder={t('account.Address.add_Address.1')}
-                placeholderTextColor="#000"
-              />
-              <Text className="text-[12px] text-gray-600">
-                {t('account.Address.add_Address.2')}
-              </Text>
-
-              <TextInput
-                style={styles.input}
-                placeholder={t('account.Address.add_Address.3')}
+                placeholder={t('account.Personal_Details.First_Name')}
+                value={formData.firstName}
+                onChangeText={value => handleChange('firstName', value)}
                 placeholderTextColor="#000"
               />
 
               <TextInput
                 style={styles.input}
-                placeholder={t('account.Address.add_Address.4')}
+                placeholder={t('account.Personal_Details.Last_Name')}
+                value={formData.lastName}
+                onChangeText={value => handleChange('lastName', value)}
+                placeholderTextColor="#000"
+              />
+
+              <TextInput
+                style={styles.input}
+                placeholder={t('account.Personal_Details.Phone_Number')}
                 keyboardType="phone-pad"
+                value={formData.phoneNumber}
+                onChangeText={value => handleChange('phoneNumber', value)}
                 placeholderTextColor="#000"
               />
 
               <TextInput
                 style={styles.input}
-                placeholder={t('account.Address.add_Address.5')}
+                placeholder={t('account.Personal_Details.DOB')}
+                value={formData.dateOfBirth}
+                onChangeText={value => handleChange('dateOfBirth', value)}
                 placeholderTextColor="#000"
               />
 
-              <View className="flex items-center">
-                <Image
-                  source={require('@/assets/address.png')}
-                  className="w-32 h-32"
-                />
-              </View>
-
-              <CustomButton
-                navigateProps={chooseMap}
-                textProps={t('account.Address.add_Address.map')}>
-                <Ionicons name="location-outline" size={24} color="#ffffff" />
-              </CustomButton>
+              <TouchableOpacity style={styles.button}>
+                <Text style={styles.buttonText}>{t('account.Address.submit')}</Text>
+              </TouchableOpacity>
             </View>
           </ScrollView>
         </TouchableWithoutFeedback>
@@ -88,7 +92,7 @@ const AddAddress = () => {
   );
 };
 
-export default AddAddress;
+export default Editprofile;
 
 const styles = StyleSheet.create({
   container: {
@@ -103,12 +107,9 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   button: {
-    display: 'flex',
-    flexDirection: 'row',
     backgroundColor: '#F15A22',
     padding: 15,
     borderRadius: 50,
-    justifyContent: 'center',
     alignItems: 'center',
     marginTop: 50,
   },

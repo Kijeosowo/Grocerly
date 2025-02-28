@@ -13,25 +13,31 @@ export enum APP_ROUTES {
   CART = 'cart',
   ACCOUNT = 'account',
 
-  NOTIFICATION="/authorised/notification",
-  SEARCH="/authorised/search",
+  NOTIFICATION = '/authorised/notification',
+  SEARCH = '/authorised/search',
 
-  // product routes link 
-  ALL_PRODUCT = "/product/AllProducts/AllProducts",
-  PRODUCT_BY_CATEGORY = "/product/Category/Category",
-  PRODUCT_DETAILS="/product/productDetails/[productId]",
-  CHECKOUT="/checkout/checkout",
-  CHECKOUTSUMMARY="/checkout/CheckoutSummary",
-  PAYMENT="/checkout/Payment",
+  PRODUCT_DETAILS = '/productDetails/[productId]',
+  CHECKOUT = '/checkout/checkout',
+  CHECKOUTSUMMARY = '/checkout/CheckoutSummary',
+  PAYMENT = '/checkout/Payment',
 
   //account routes link
-  ADDRESS = "/account/Address",
-  PASSWORD_SETTING = "/account/PasswordSettings",
-  PERSONAL_DETAILS = "/account/PersonalDetails",
-  PRIVACY = "/account/PrivacyPolicy",
-  SUPPORT = "/account/Support",
-  TERMS = "/account/Terms",
+  PERSONAL_DETAILS = 'Account/PersonalDetails',
+  ADDRESS = 'Account/Address',
+  PASSWORD_SETTING = 'Account/PasswordSettings',
+  TERMS = 'Account/Terms',
+  SUPPORT = 'Account/Support',
+  PRIVACY = 'Account/PrivacyPolicy',
 
-  // address routes link 
-  ADD_ADDRESS = "/address/AddAddress"
+  // Account Password
+  CHANGEPASSWORD = 'Account/changepassword',
+  CHANGEEMAIL = 'Account/changeemail',
+  RESETEMAIL = 'Account/passwordreset',
+
+  // address routes link
+  ADD_ADDRESS = 'address/AddAddress',
+
+  // Personal Details
+  EDITPROFILE = 'Account/Editprofile'
 }
+

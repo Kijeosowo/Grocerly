@@ -11,15 +11,20 @@ import {
   Keyboard,
   TouchableWithoutFeedback,
 } from 'react-native';
-
+import { router } from 'expo-router';
 import ScreenWrapper from '@/components/ScreenWrapper';
 import {COLORS} from '@/theme/colors';
 import ArchBorder from '@/components/ArchBorder';
 import MainPageHeader from '@/components/MainPageHeader';
 import {t} from 'i18next';
 import Layout from '../(main)/_layout';
+import { APP_ROUTES } from '@/contants/app-routes';
+import { SAFE_AREA_PADDING } from '@/utils/utils';
 
 const changeemail = () => {
+  const passwordreset = (() => {
+    router.push(APP_ROUTES.RESETEMAIL);
+  })
   return (
     <ScreenWrapper background={COLORS.light.primary}>
       <KeyboardAvoidingView
@@ -28,37 +33,34 @@ const changeemail = () => {
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
           <ScrollView className="flex-1 bg-white">
             <ArchBorder>
-              <MainPageHeader name={t('changeemail.header')} />
+              <MainPageHeader
+                name={t('account.password_settings.change_email.header')}
+              />
             </ArchBorder>
 
             <View style={styles.container}>
               <TextInput
                 style={styles.input}
-                placeholder={t('changeemail.old')}
+                placeholder={t('account.password_settings.change_email.1')}
                 placeholderTextColor="#000"
               />
 
               <TextInput
                 style={styles.input}
-                placeholder={t('changeemail.new')}
+                placeholder={t('account.password_settings.change_email.2')}
                 placeholderTextColor="#000"
               />
               <View className="flex-row justify-between">
                 <Text
-                  className="text-[9px] text-base"
-                  style={{color: COLORS.light.grey3}}>
-                  {t('changeemail.strong')}
-                </Text>
-                <Text
                   className="text-sm text-base"
                   style={{color: COLORS.light.grey3}}>
-                  {t('changeemail.number')}
+                  {t('account.password_settings.change_email.access')}
                 </Text>
               </View>
 
               <TouchableOpacity style={styles.button}>
-                <Text style={styles.buttonText}>
-                  {t('changepassword.confirm')}
+                <Text style={styles.buttonText} className="text-sm" onPress={passwordreset}>
+                  {t('account.password_settings.change_email.confirm')}
                 </Text>
               </TouchableOpacity>
             </View>

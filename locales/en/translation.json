@@ -109,10 +109,10 @@
     "reload": "Reload"
   },
 
-  "filter":{
+  "filter": {
     "header": "Filter"
   },
-  "notification":{
+  "notification": {
     "header": "Notifications",
     "No_Notifications": "You have No Notifications yet",
     "headerTitle": "You've got a new notification waiting for you, never miss important updates."
@@ -127,8 +127,6 @@
     "btn1": "Home",
     "btn2": "Cart"
   },
-  
-
 
   "Tab": {
     "Home": "Home",
@@ -137,7 +135,6 @@
     "Cart": "Cart",
     "Account": "Account"
   },
-
 
   "order": {
     "header": "My Order",
@@ -158,6 +155,241 @@
       "items": "Items",
       "amount": "Amount",
       "date": "Placed on"
+    }
+  },
+  "product": {
+    "product-details": {
+      "title": "Product Details",
+      "category": "category",
+      "Availability": "Availability",
+      "Delivery": "Delivery Time Frame",
+      "time": "working days",
+      "Provinces": "Deliver to 5 Provinces",
+      "Save": "Save money!",
+      "save-desc": "Top up now and enjoy the best price in the market",
+      "save-title-desc": "Compare to market price",
+      "tag-Description": "Description",
+      "tag-Nutritional": "Nutritional Information",
+      "tag-Reviews": "Reviews"
+    },
+    "cart": {
+      "title": "My Cart",
+      "input-placeholder": "Search for Products In Cart",
+      "item-incart": "items in your cart",
+      "clear": "Clear Cart",
+      "desc": "This Item has been added successfully",
+      "sub-title": "Item added to cart!",
+      "Processing-fee": "Processing fees",
+      "Discount": "Discount",
+      "Delivery-fees": "Delivery fees",
+      "Total-cost": "Total cost",
+      "empty": {
+        "title": "Your Cart Is Empty",
+        "desc": "Start Shopping to enjoy amazing discounts on your favorite products."
+      }
+    },
+    "Categories": {
+      "title": "Categories",
+      "Bakery": "Bakery & Grains",
+      "Health": "Health Foods",
+      "Beverages": "Beverages",
+      "Spices": "Spices & Condimemts",
+      "Meat": "Meat & Poultry",
+      "Dairy": "Dairy Products",
+      "Dry-Foods": "Dry Foods & Grains",
+      "Frozen-Foods": "Frozen Foods"
+    },
+    "filter": {
+      "title": "Filter",
+      "Location": "Location",
+      "dropdown": "All Cities",
+      "dropdown-search": "Search...",
+      "Best-Prices": "Best Prices",
+      "Minimum": "Minimum Price ",
+      "Maximum": "Maximum Price ",
+      "Discount": {
+        "title": "Discount",
+        "value1": "Less than 10%",
+        "value2": "10% or more",
+        "value3": "20% or more",
+        "value4": "30% or more",
+        "value5": "40% or more",
+        "value6": "50% 0r more"
+      },
+      "Customer-Ratings": {
+        "title": "Customer Ratings",
+        "value1": "Less than 1 Star",
+        "value2": "2 Stars",
+        "value3": "3 Stars",
+        "value4": "4 Stars",
+        "value5": "5 Stars"
+      },
+      "Brand": {
+        "title": "Brand",
+        "value1": "Less than 10%",
+        "value2": "10% or more",
+        "value3": "20% or more",
+        "value4": "30% or more",
+        "value5": "40% or more",
+        "value6": "50% 0r more"
+      }
+    }
+  },
+  "discount": {
+    "title": "Top up Your Wallet",
+    "desc1": "Top up now and enjoy the best price in the market",
+    "desc2": "Discounts valid only for min. Topups of RM100 & max. orders of RM500"
+  },
+  "button": {
+    "cart": "Add to cart",
+    "share": "SHARE LINK",
+    "done": "done",
+    "Home": "Home",
+    "cart2": "Cart",
+    "checkout": "Complete checkout",
+    "Payment": "Complete Payment",
+    "Proceed-payment": "Proceed to payment",
+    "Shopping": "Start Shopping",
+    "Filter": "Apply Filter",
+    "Setup_Address": "Setup Delivery Address",
+    "add_Address": "Add Address"
+  },
+  "Checkout": {
+    "Checkout_Summary": "Checkout Summary",
+    "title": "Complete Checkout",
+    "sub-title": "Order details",
+    "desc": "Choose how would you like to take the order",
+    "tab_Delivery": "Delivery",
+    "tab_Pick_up": "Pick-up",
+    "Delivery": {
+      "address": "Delivery Address",
+      "choose_address": "Would You like to deliver to current address?",
+      "delivery_fees": "The delivery fees to this address is estimated to be 50",
+      "delivery_date": "Delivery Date",
+      "delivery_date_desc": "Due to high demand, you can choose the Delivery date to be in 4 days or later",
+      "Delivery_Time": "Delivery Time Slot",
+      "Delivery_Time_desc": "Due to high demand, you can choose the pick-up time to 9 AM to 7 PM: ",
+      "Time": "Time",
+      "card": {
+        "available": "Available in 25 Minutes",
+        "stores": "Iphoh District",
+        "address": "Delivery address address, street, district, town"
+      },
+      "Setup_Delivery": {
+        "title": "No Delivery Address",
+        "desc": "Please setup your delivery address to help us serve you better."
+      }
+    },
+    "Pick_up": {
+      "outlets": "Pick-up outlets",
+      "Choose_outlet": "Choose the outlet from which you pick-up the order",
+      "delivery_date": "Pick-up Date",
+      "delivery_date_desc": "Due to high demand, you can choose the Delivery date to be in 4 days or later",
+      "Delivery_Time": "Pick-up Time Slot",
+      "Delivery_Time_desc": "Due to high demand, you can choose the pick-up time to 9 AM to 7 PM: ",
+      "Time": "Time",
+      "card": {
+        "available": "Available in 25 Minutes",
+        "stores": "Pakhum Stores",
+        "address": "outlet address, street, district, town",
+        "distance": "3km Away",
+        "station": "Call Pickup Station"
+      }
+    }
+  },
+  "Payment": {
+    "title": "Payment",
+    "desc": "Select Payment Method",
+    "wallet": "Pay Via Wallet",
+    "bank": "Pay Via Online Bank",
+    "BoostPay": "BoostPay",
+    "Grab_Pay": "Grab Pay",
+    "MasterCard": "MasterCard",
+    "Touchngo": "Touchngo"
+  },
+  "account": {
+    "title": "Account",
+    "list_section": {
+      "1": "Personal Details",
+      "2": "Address Details",
+      "3": "Password and Email Settings",
+      "4": "Terms and Conditions",
+      "5": "Support",
+      "6": "Privacy Policy",
+      "7": "Logout"
+    },
+    "Personal_Details": {
+      "title": "Personal Details",
+      "edit": "Edit Profile Settings",
+      "First_Name": "First Name",
+      "Last_Name": "Last Name",
+      "Email_Address": "Email Address",
+      "Phone_Number": "Phone Number",
+      "DOB": "Date of Birth"
+    },
+    "terms": {
+      "title": "Terms of Usage",
+      "sub_title": "TERMS OF USAGE FOR Grocerly",
+      "desc1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "desc2": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquhdihijkd;l/dv"
+    },
+    "Privacy": {
+      "title": "Privacy Policy",
+      "sub_title": "PRIVACY POLICY FOR Grocerly",
+      "desc1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "desc2": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquhdihijkd;l/dv"
+    },
+    "Address": {
+      "title": "Address",
+      "edit": "Edit Address Details",
+      "add": "Add New Address",
+      "zip_code": "Zip/Postal Code",
+      "State": "State/Province/Region",
+      "Select City": "Select City",
+      "warn": "Please Ensure your delivery address is correct",
+      "add_Address": {
+        "title": "Add Address",
+        "1": "Address Line 1",
+        "2": "Please ensure your delivery address is correct",
+        "3": "Select City",
+        "4": "State/Province/Region",
+        "5": "Zip/Postal Code",
+        "map": "Choose on map"
+      },
+      "submit": "Submit"
+    },
+    "password_settings": {
+      "password": {
+        "header": "Password Settings",
+        "title": "Password",
+        "sub-title": "Set up a unique password to protect your account"
+      },
+      "email_address": {
+        "title": "Email Address",
+        "sub-title": "Email address associated with your account"
+      },
+      "deactivate": {
+        "title": "Deactivate",
+        "sub-title": "Email address associated with your account",
+        "deactivate": "Deactivate"
+      },
+      "change_password": {
+        "header": "Change Password",
+        "1": "Old Password",
+        "2": "New Password",
+        "strong": "Strong",
+        "confirm": "Confirm"
+      },
+      "change_email": {
+        "header": "Change Email",
+        "1": "Old Email",
+        "2": "New Email",
+        "access": "Please ensure you have access to this email provided",
+        "confirm": "Confirm"
+      }
+    },
+    "edit_profile": {
+      "header": "Edit Profille"
     }
   }
 }

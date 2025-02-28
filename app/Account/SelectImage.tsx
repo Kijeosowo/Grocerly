@@ -52,7 +52,6 @@ const SelectImage = () => {
           style={styles.profilePic}
         />
       </TouchableOpacity>
-      {/* <Text style={styles.text}>Tap to Change Profile Picture</Text> */}
     </View>
   );
 };

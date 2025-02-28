@@ -33,16 +33,6 @@ const Editprofile = () => {
     setFormData({...formData, [name]: value});
   };
 
-  const handleSubmit = () => {
-    const {firstName, lastName, phoneNumber, dateOfBirth} = formData;
-    if (!firstName || !lastName || !phoneNumber || !dateOfBirth) {
-      Alert.alert('Error', 'All fields are required.');
-      return;
-    }
-    Alert.alert('Success', 'Form Submitted!');
-    console.log(formData);
-  };
-
   return (
     <ScreenWrapper background={COLORS.light.primary}>
       <KeyboardAvoidingView
@@ -51,14 +41,15 @@ const Editprofile = () => {
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
           <ScrollView className="flex-1 bg-white">
             <ArchBorder>
-              <MainPageHeader name={t('editprofile.header')} />
+              <MainPageHeader name={t('account.edit_profile.header')} />
             </ArchBorder>
+            
             <SelectImage />
 
             <View style={styles.container}>
               <TextInput
                 style={styles.input}
-                placeholder="First Name"
+                placeholder={t('account.Personal_Details.First_Name')}
                 value={formData.firstName}
                 onChangeText={value => handleChange('firstName', value)}
                 placeholderTextColor="#000"
@@ -66,7 +57,7 @@ const Editprofile = () => {
 
               <TextInput
                 style={styles.input}
-                placeholder="Last Name"
+                placeholder={t('account.Personal_Details.Last_Name')}
                 value={formData.lastName}
                 onChangeText={value => handleChange('lastName', value)}
                 placeholderTextColor="#000"
@@ -74,7 +65,7 @@ const Editprofile = () => {
 
               <TextInput
                 style={styles.input}
-                placeholder="Phone Number"
+                placeholder={t('account.Personal_Details.Phone_Number')}
                 keyboardType="phone-pad"
                 value={formData.phoneNumber}
                 onChangeText={value => handleChange('phoneNumber', value)}
@@ -83,14 +74,14 @@ const Editprofile = () => {
 
               <TextInput
                 style={styles.input}
-                placeholder="Date of Birth"
+                placeholder={t('account.Personal_Details.DOB')}
                 value={formData.dateOfBirth}
                 onChangeText={value => handleChange('dateOfBirth', value)}
                 placeholderTextColor="#000"
               />
 
-              <TouchableOpacity style={styles.button} onPress={handleSubmit}>
-                <Text style={styles.buttonText}>{t('editaddress.submit')}</Text>
+              <TouchableOpacity style={styles.button}>
+                <Text style={styles.buttonText}>{t('account.Address.submit')}</Text>
               </TouchableOpacity>
             </View>
           </ScrollView>

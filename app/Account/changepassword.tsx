@@ -28,37 +28,34 @@ const changepassword = () => {
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
           <ScrollView className="flex-1 bg-white">
             <ArchBorder>
-              <MainPageHeader name={t('changepassword.header')} />
+              <MainPageHeader
+                name={t('account.password_settings.change_password.header')}
+              />
             </ArchBorder>
 
             <View style={styles.container}>
               <TextInput
                 style={styles.input}
-                placeholder={t('changepassword.old')}
+                placeholder={t('account.password_settings.change_password.1')}
                 placeholderTextColor="#000"
               />
 
               <TextInput
                 style={styles.input}
-                placeholder={t('changepassword.new')}
+                placeholder={t('account.password_settings.change_password.2')}
                 placeholderTextColor="#000"
               />
               <View className="flex-row justify-between">
                 <Text
                   className="text-sm text-base"
                   style={{color: COLORS.light.grey3}}>
-                  {t('changepassword.strong')}
-                </Text>
-                <Text
-                  className="text-sm text-base"
-                  style={{color: COLORS.light.grey3}}>
-                  {t('changepassword.number')}
+                  {t('account.password_settings.change_password.strong')}
                 </Text>
               </View>
 
               <TouchableOpacity style={styles.button}>
                 <Text style={styles.buttonText}>
-                  {t('changepassword.confirm')}
+                  {t('account.password_settings.change_password.confirm')}
                 </Text>
               </TouchableOpacity>
             </View>

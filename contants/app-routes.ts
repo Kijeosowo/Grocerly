@@ -13,20 +13,31 @@ export enum APP_ROUTES {
   CART = 'cart',
   ACCOUNT = 'account',
 
-  PRIVACY = 'Account/privacypolicy',
-  TERMSANDCONDITION = 'Account/termsandcondition',
-  PERSONALDETAILS = 'Account/personaldetails',
-  EDITPROFILE = 'Account/Editprofile',
-  ADDRESSDETAILS = 'Account/Address',
-  EDITADDRESS = 'Account/editaddress',
-  ADDADDRESS = 'Account/addaddress',
-  PASSWORDSETTINGS = 'Account/passwordsettings',
-  CHANGEPASSWORD = 'Account/changepassword',
-  CHANGEEMAIL = 'Account/changeemail',
-  CONTACT = 'Account/contact',
-
   NOTIFICATION = '/authorised/notification',
   SEARCH = '/authorised/search',
 
-  PRODUCT_DETAILS="/productDetails/[productId]"
+  PRODUCT_DETAILS = '/productDetails/[productId]',
+  CHECKOUT = '/checkout/checkout',
+  CHECKOUTSUMMARY = '/checkout/CheckoutSummary',
+  PAYMENT = '/checkout/Payment',
+
+  //account routes link
+  PERSONAL_DETAILS = 'Account/PersonalDetails',
+  ADDRESS = 'Account/Address',
+  PASSWORD_SETTING = 'Account/PasswordSettings',
+  TERMS = 'Account/Terms',
+  SUPPORT = 'Account/Support',
+  PRIVACY = 'Account/PrivacyPolicy',
+
+  // Account Password
+  CHANGEPASSWORD = 'Account/changepassword',
+  CHANGEEMAIL = 'Account/changeemail',
+  RESETEMAIL = 'Account/passwordreset',
+
+  // address routes link
+  ADD_ADDRESS = 'address/AddAddress',
+
+  // Personal Details
+  EDITPROFILE = 'Account/Editprofile'
 }
+

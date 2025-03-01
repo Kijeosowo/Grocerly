@@ -4,7 +4,7 @@
     "slug": "Grocerly",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/logo.png",
+    "icon": "./assets/icon.png", 
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "scheme": "your-app-scheme",
@@ -23,6 +23,32 @@
           "fonts": ["./assets/fonts/Inter_18pt-ThinItalic.ttf"]
 
         }
+      ],
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.REPLACE_ME",
+          "publishableKey": "pk_live_51P4Z70I7ciauicKkD3AwQlok3gc8XTY5MpmWF2X0AkFn3iOnOiZntoViNzQaeJ2LSa0JAHKyMCZk3xPkpD62FNIA00KtS72uke",
+          "enableGooglePay": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends.",
+          "cameraPermission": "The app accesses your camera to let you share them with your friends."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#F15A22",
+          "image": "./assets/splash.png", 
+          "dark": {
+            "image": "./assets/splash-icon.png",
+            "backgroundColor": "#ffffff" 
+          }
+        }
       ]
     ],
     "splash": {
@@ -38,7 +64,7 @@
       "adaptiveIcon": {
 
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#F15A22"
+        "backgroundColor": "#ffffff"
       },
       "package": "com.anonymous.myapp",
       "permissions": [

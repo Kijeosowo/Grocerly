@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const PasswordSettings = () => {
+const LiveChat = () => {
   return (
     <View>
-      <Text>PasswordSettings</Text>
+      <Text>LiveChat</Text>
     </View>
   )
 }
 
-export default PasswordSettings
+export default LiveChat
 
 const styles = StyleSheet.create({})

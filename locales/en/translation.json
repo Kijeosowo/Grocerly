@@ -20,6 +20,44 @@
       "password": "Password is required",
       "passwordLength": "Password should be more than 6",
       "confirmPassword": "Confirm password must match password"
+    },
+    "network": {
+      "title": "Network Error",
+      "desc": "Unable to processed your request"
+    },
+    "server_error": {
+      "title": "Unable to send request",
+      "desc": "Invalid data"
+    },
+    "review": {
+      "title": "Product review added",
+      "desc": "You have successful have a review"
+    },
+    "Contact": {
+      "error": {
+        "name": "Full name is required",
+        "email": "Email is required",
+        "phone": "Mobile number is required",
+        "message": "Message is required",
+        "nameMinLength": "Full name must be valid",
+        "invalidEmail": "Invalid email address",
+        "phoneMinLength": "Mobile number must be greather than 7"
+      },
+      "success": {
+        "title": "Success! Your form has been submitted.",
+        "desc": "Thank you for getting in touch! We appreciate you contacting us."
+      }
+    },
+    "product": {
+      "error": {
+        "title": "Select order detail",
+        "pickup": "Select pickup address",
+        "delivery": "Select delivery address",
+        "date": "Select pickup date",
+        "time": "Select pickup time",
+        "time2": "Hours must not be greater than 12",
+        "time3": "Minutes must not be greater than 60"
+      }
     }
   },
   "buttons": {
@@ -114,7 +152,8 @@
     "headerTitle": "You've got a new notification waiting for you, never miss important updates."
   },
   "search": {
-    "placeholder" : "Search for Products"
+    "placeholder" : "Search for Products",
+    "title": "Search"
   },
   "Tab": {
     "Home": "Home",
@@ -160,7 +199,15 @@
       "save-title-desc": "Compare to market price",
       "tag-Description": "Description",
       "tag-Nutritional": "Nutritional Information",
-      "tag-Reviews": "Reviews"
+      "tag-Reviews": "Reviews",
+      "Reviews": {
+        "rate": "Rate this item:",
+        "Name": "Name",
+        "write": "Write your review",
+        "date": "Reviewed on",
+        "title": "Customer Reviews",
+        "total": "nationwide reviews"
+      }
     },
     "cart": {
       "title": "My Cart",
@@ -235,7 +282,19 @@
     "Shopping": "Start Shopping",
     "Filter": "Apply Filter",
     "Setup_Address": "Setup Delivery Address",
-    "add_Address": "Add Address"
+    "add_Address": "Add Address",
+    "choose_map": "Chose on Map",
+    "Refer_Earn": "Refer & Earn",
+    "Redeem": "Redeem",
+    "share_Link": "Share  Link",
+    "Scan_QR": "Scan QR code",
+    "Activity_Status": "Activity Status",
+    "report": "Generate Report",
+    "Generate": "Generate",
+    "Download_Report": "Download Report",
+    "Pay": "Pay",
+    "confirm_payment": "Confirm Payment",
+    "Submit": "Submit"
   },
   "Checkout": {
     "Checkout_Summary": "Checkout Summary",
@@ -253,11 +312,7 @@
       "Delivery_Time": "Delivery Time Slot",
       "Delivery_Time_desc": "Due to high demand, you can choose the pick-up time to 9 AM to 7 PM: ",
       "Time": "Time",
-      "card": {
-        "available": "Available in 25 Minutes",
-        "stores": "Iphoh District",
-        "address": "Delivery address address, street, district, town"
-      },
+      "available": "Available in 25 Minutes",
       "Setup_Delivery": {
         "title": "No Delivery Address",
         "desc": "Please setup your delivery address to help us serve you better."
@@ -304,11 +359,13 @@
     "Personal_Details": {
       "title": "Personal Details",
       "edit": "Edit Profile Settings",
-      "First_Name": "First Name",
-      "Last_Name": "Last Name",
+      "Full_Name": "Full Name",
       "Email_Address": "Email Address",
       "Phone_Number": "Phone Number",
-      "DOB": "Date of Birth"
+      "DOB": "Date of Birth",
+      "editDetails": {
+        "title": "Edit Profile"
+      }
     },
     "terms": {
       "title": "Terms of Usage",
@@ -326,13 +383,184 @@
       "title": "Address",
       "edit": "Edit Address Details",
       "add": "Add New Address",
+      "error": "Unable to fetch address",
       "zip_code": "Zip/Postal Code",
       "State": "State/Province/Region",
-      "Select City": "Select City",
+      "Select_City": "Select City",
+      "Select_type": "Select Type",
       "warn": "Please Ensure your delivery address is correct",
       "add_Address": {
         "title": "Add Address"
+      },
+      "type": {
+        "home": "Home",
+        "office": "Office",
+        "other": "Other"
       }
+    },
+    "Password_Email": {
+      "title": "Account Settings",
+      "card1": {
+        "title": "Password",
+        "desc": "Set up a unique password to protect your account"
+      },
+      "card2": {
+        "title": "Email Address",
+        "desc": "Email address associated with your account"
+      },
+      "card3": {
+        "title": "Deactivate Account",
+        "desc": "Email address associated with your account",
+        "btn": "Deactivate"
+      },
+      "Change_Password": {
+        "input1": "Old Password",
+        "input2": "New Password",
+        "otp": {
+          "title": "OTP Verification",
+          "desc": "Please enter the One-Time Password (OTP) sent to your email address to complete the verification process",
+          "didnt": "Didnt Receive OTP? ",
+          "Resend": "Resend"
+        },
+        "success": "Password reset successfully!"
+      },
+      "Change_email": {
+        "input1": "Old Email",
+        "input2": "New Email",
+        "alert": {
+          "title": "WE’VE SENT YOU AN EMAIL",
+          "desc": "Please click on the link sent to janedoe3@gmail.com verify your account and access the app"
+        }
+      }
+    },
+    "support": {
+      "title1": "Contact Us",
+      "title2": "Chat Support",
+      "tab": {
+        "col1": "Contact Us",
+        "col2": "Live Chat Support"
+      },
+      "contact": {
+        "address": "House# 72, Road# 21, Banani, Dhaka-1213 (near Banani Bidyaniketon School & College, beside University of South Asia)",
+        "call": "Call : 13301 (24/7)",
+        "email": "Email : support@pathao.com",
+        "form": {
+          "title": "Send Message",
+          "input1": "Name",
+          "input2": "Email",
+          "input3": "Your mobile number",
+          "input4": "Write your text"
+        }
+      }
+    }
+  },
+  "Finance": {
+    "title": "My Wallet",
+    "tab": {
+      "one": "My Wallet",
+      "two": "My Savings",
+      "three": "My Referrals"
+    },
+    "Balance": "Available Balance",
+    "Topup_wallet": "Topup wallet",
+    "Transaction_History": "Transaction History",
+    "All_Transaction_History": "See All",
+    "TopUpWallet": {
+      "title": "Top Up Wallet",
+      "title2": "Top up Your Wallet",
+      "desc": "Top up now and enjoy the best price in the market",
+      "input": "Enter Amount",
+      "pay_desc": "Your payment will be made on stripe"
+    },
+    "Transaction_Details": {
+      "error": "Unable to fetch transaction history",
+      "none": {
+        "title": "You have no Transaction History Yet",
+        "desc": "Top up your wallet and Start Shopping to enjoy amazing discounts on your favorite products."
+      },
+      "id": "Order ID: ",
+      "date": "Date of Purchase: "
+    },
+    "My_Referrals": {
+      "point": "Referral Points",
+      "equil": "Equivalent to: ",
+      "Referrals": "Referrals",
+      "work": "How this works",
+      "Credit_history": "Credit history"
+    },
+    "How_works": {
+      "title": "How it works",
+      "sub": "Referral program terms",
+      "list1": {
+        "title": "Share",
+        "desc": "Share your referral code with your friends"
+      },
+      "list2": {
+        "title": "Earn",
+        "desc": "Earn reward credit worth of RM20 when a friend uses your code "
+      },
+      "list3": {
+        "title": "Redeem",
+        "desc": "Redeem your reward credit to top up your credit "
+      },
+      "list4": {
+        "title": "Shop",
+        "desc": "Enjoy shopping and paying with this credit"
+      }
+    },
+    "Credit_History": {
+      "title": "Credit History",
+      "error": "Unable to fetch referral credit history",
+      "none": {
+        "title": "You have no Credit History Yet",
+        "desc": "Start Referring to earn amazing discounts on your favorite products."
+      }
+    },
+    "Redeem": {
+      "title": "Statistics",
+      "title1": "Refer & Earn",
+      "Redeem_Credit": "Redeem Credit",
+      "view": "View History",
+      "enter": "Enter amount of reward credit that you want to redeem",
+      "error": "Unable to fetch Redeem chart data.",
+      "Recent_Referal": "Recent Referal Flow",
+      "none": {
+        "title": "You have no Referral History Yet",
+        "desc": "Start Referring to earn amazing discounts on your favorite products."
+      }
+    },
+    "Share": {
+      "Share_Link": "Share Link",
+      "ScanQR": "Scan QR Code",
+      "align": "Align the camera with QR code",
+      "copy": "Copy Link",
+      "col1": {
+        "title": "Share",
+        "desc": "Share your referral code with your friends"
+      },
+      "col2": {
+        "title": "Earn",
+        "desc": "Earn reward credit when your code is used "
+      },
+      "col3": {
+        "title": "Redeem",
+        "desc": "Redeem your reward credit to top up your credit "
+      },
+      "col4": {
+        "title": "Shop",
+        "desc": "Enjoy shopping and paying with this credit"
+      }
+    },
+    "mySaving": {
+      "card1": "Total Savings",
+      "card2": "Total Expense",
+      "History": "Savings History",
+      "error": "Unable to fetch saving history",
+      "none": {
+        "title": "You have no Savings History Yet",
+        "desc": "Top up your wallet and Start Shopping to enjoy amazing discounts on your favorite products."
+      },
+      "selectReportDate": "Select Date for Report"
     }
   }
 }

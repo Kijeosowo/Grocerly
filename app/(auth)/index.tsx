@@ -35,7 +35,7 @@ import ForgotPassword from '@/components/section/ForgotPassword';
 import OTPVerification from '@/components/section/OTPVerification';
 import ProceedToLogin from '@/components/section/ProceedToLogin';
 import SetPassword from '@/components/section/SetPassword';
-import {Link} from 'expo-router';
+import {Link, router} from 'expo-router';
 import {APP_ROUTES} from '@/contants/app-routes';
 import AuthWrapper from '@/components/AuthWrapper';
 
@@ -64,7 +64,7 @@ const Validation = yup.object().shape({
 });
 const Login = () => {
   const {t} = useTranslation();
-  const {updateToken} = useAuthToken();
+  const {updateToken, updateUserData} = useAuthToken();
 
   const [rememberMe, setRemember] = useState(false);
   const [ActivePage, setActivePage] = useState<ResetPassagesType>({
@@ -97,7 +97,9 @@ const Login = () => {
         });
         console.log(response?.data);
         const token = response?.data?.token;
+        updateUserData(response?.data?.user)
         updateToken(token);
+        router.push(APP_ROUTES.HOME2)
       } catch (error: any) {
         console.log('🚀 ~ mutationFn: ~ error:', error);
         showMessage({

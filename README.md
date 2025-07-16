@@ -1,7 +1,4 @@
 # Grocerly: Grocery Delivery Mobile App
-
-## Overview
-
 Grocerly is a comprehensive grocery delivery mobile application built with Expo and React Native, designed to provide a seamless online grocery shopping and delivery experience.
 
 ## 🚀 Features
